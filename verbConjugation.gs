@@ -29,7 +29,7 @@ var nagara = "ながら"
 
 // //////////////////////////////////////////////////////////////////////////////////////////
 // FUNCTION VERB TYPE 
-function verbType(input){
+function WordType(input){
 
   // Check is it type II ichidan
   if(hiraganaListH[3].indexOf(input.slice(-2, -1)) >= 0 || hiraganaListH[1].indexOf(input.slice(-2, -1)) >= 0　|| ichidanException.indexOf(input) >= 0) {
@@ -51,7 +51,7 @@ function verbType(input){
 
 // //////////////////////////////////////////////////////////////////////////////////////////
 // FUNCTION verbKanjiPolitePresentPositive 
-function verbKanjiPolitePresentPositive(input){
+function KanjiPolitePositive(input){
 
     // Check is it type II ichidan
   if(hiraganaListH[3].indexOf(input.slice(-2, -1)) >= 0 || hiraganaListH[1].indexOf(input.slice(-2, -1)) >= 0 || ichidanException.indexOf(input) >= 0) {
@@ -78,7 +78,7 @@ function verbKanjiPolitePresentPositive(input){
 
 // //////////////////////////////////////////////////////////////////////////////////////////
 // FUNCTION VERB POLITE PRESENT NEGATIVE
-function verbKanjiPolitePresentNegative(input) {
+function KanjiPoliteNegative(input) {
 
   // Check is it type II ichidan
   if(hiraganaListH[3].indexOf(input.slice(-2, -1)) >= 0 || hiraganaListH[1].indexOf(input.slice(-2, -1)) >= 0 || ichidanException.indexOf(input) >= 0) {
@@ -113,7 +113,7 @@ function verbKanjiPolitePresentNegative(input) {
 
 // //////////////////////////////////////////////////////////////////////////////////////////
 // FUNCTION 
-function verbKanjiPlainPresentNegative(input) {
+function KanjiCasualNegative(input) {
   // Check is it type II ichidan
   if(hiraganaListH[3].indexOf(input.slice(-2, -1)) >= 0 || hiraganaListH[1].indexOf(input.slice(-2, -1)) >= 0 || ichidanException.indexOf(input) >= 0) {
 
@@ -213,7 +213,7 @@ function verbKanjiPoliteVolitionalNegative(input) {
 
 // //////////////////////////////////////////////////////////////////////////////////////////
 // FUNCTION
-function verbKanjiPlainVolitionalPositive(input) {
+function KanjiVolitonal(input) {
     // Check is it type II ichidan
   if(hiraganaListH[3].indexOf(input.slice(-2, -1)) >= 0 || hiraganaListH[1].indexOf(input.slice(-2, -1)) >= 0 || ichidanException.indexOf(input) >= 0) {
     return input.replace(input.slice(-1), 'よう');
@@ -276,7 +276,7 @@ function verbKanjiPlainVolitionalNegative(input) {
 
 // //////////////////////////////////////////////////////////////////////////////////////////
 // FUNCTION
-function verbKanjiTe(input) {
+function KanjiTe(input) {
   // Check is it type II ichidan
   if(hiraganaListH[3].indexOf(input.slice(-2, -1)) >= 0 || hiraganaListH[1].indexOf(input.slice(-2, -1)) >= 0 || ichidanException.indexOf(input) >= 0) {
 
@@ -323,7 +323,7 @@ function verbKanjiTe(input) {
 
 // //////////////////////////////////////////////////////////////////////////////////////////
 // FUNCTION
-function verbKanjiPoliteImperativePositive(input) {
+function KanjiPoliteImperative(input) {
     // Check is it type II ichidan
   if(hiraganaListH[3].indexOf(input.slice(-2, -1)) >= 0 || hiraganaListH[1].indexOf(input.slice(-2, -1)) >= 0 || ichidanException.indexOf(input) >= 0) {
 
@@ -411,7 +411,7 @@ function verbKanjiPoliteImperativeNegative(input) {
 
 // //////////////////////////////////////////////////////////////////////////////////////////
 // FUNCTION
-function verbKanjiPlainImperativePositive(input) {
+function KanjiCasualImperative(input) {
     // Check is it type II ichidan
   if(hiraganaListH[3].indexOf(input.slice(-2, -1)) >= 0 || hiraganaListH[1].indexOf(input.slice(-2, -1)) >= 0 || ichidanException.indexOf(input) >= 0) {
     return input.replace(input.slice(-1), 'ろ');
@@ -447,7 +447,7 @@ function verbKanjiPlainImperativeNegative(input) {
 
 // //////////////////////////////////////////////////////////////////////////////////////////
 // FUNCTION
-function verbKanjiPolitePastPositive(input) {
+function KanjiPolitePast(input) {
 
     // Check is it type II ichidan
   if(hiraganaListH[3].indexOf(input.slice(-2, -1)) >= 0 || hiraganaListH[1].indexOf(input.slice(-2, -1)) >= 0 || ichidanException.indexOf(input) >= 0) {
@@ -483,7 +483,7 @@ function verbKanjiPolitePastPositive(input) {
 
 // //////////////////////////////////////////////////////////////////////////////////////////
 // FUNCTION
-function verbKanjiPolitePastNegative(input) {
+function KanjiPolitePastNegative(input) {
 
     // Check is it type II ichidan
   if(hiraganaListH[3].indexOf(input.slice(-2, -1)) >= 0 || hiraganaListH[1].indexOf(input.slice(-2, -1)) >= 0 || ichidanException.indexOf(input) >= 0) {
@@ -519,7 +519,7 @@ function verbKanjiPolitePastNegative(input) {
 
 // //////////////////////////////////////////////////////////////////////////////////////////
 // FUNCTION
-function verbKanjiPlainPastPositive(input) {
+function KanjiCasualPast(input) {
 
     // Check is it type II ichidan
   if(hiraganaListH[3].indexOf(input.slice(-2, -1)) >= 0 || hiraganaListH[1].indexOf(input.slice(-2, -1)) >= 0 || ichidanException.indexOf(input) >= 0) {
@@ -568,7 +568,7 @@ function verbKanjiPlainPastPositive(input) {
 
 // //////////////////////////////////////////////////////////////////////////////////////////
 // FUNCTION
-function verbKanjiPlainPastNegative(input) {
+function KanjiCasualPastNegative(input) {
 
   // Check is it type II ichidan
   if(hiraganaListH[3].indexOf(input.slice(-2, -1)) >= 0 || hiraganaListH[1].indexOf(input.slice(-2, -1)) >= 0 || ichidanException.indexOf(input) >= 0) {
@@ -884,7 +884,7 @@ function verbKanjiPoliteProgressiveNegative(input) {
 
 // //////////////////////////////////////////////////////////////////////////////////////////
 // FUNCTION
-function verbKanjiPlainProgressivePositive(input) {
+function KanjiProgressive(input) {
   
    // Check is it type II ichidan
   if(hiraganaListH[3].indexOf(input.slice(-2, -1)) >= 0 || hiraganaListH[1].indexOf(input.slice(-2, -1)) >= 0 || ichidanException.indexOf(input) >= 0) {
@@ -1074,7 +1074,7 @@ function verbKanjiPlainPastProgressivePositive(input) {
 
 // //////////////////////////////////////////////////////////////////////////////////////////
 // FUNCTION
-function verbKanjiPlainProvitionalConditionalPositive(input) {
+function KanjiConditional(input) {
     // Check is it type II ichidan
   if(hiraganaListH[3].indexOf(input.slice(-2, -1)) >= 0 || hiraganaListH[1].indexOf(input.slice(-2, -1)) >= 0 || ichidanException.indexOf(input) >= 0) {
     return input.replace(input.slice(-1), 'れば');
@@ -1351,7 +1351,7 @@ function verbKanjiPolitePotentialNegative(input) {
 
 // //////////////////////////////////////////////////////////////////////////////////////////
 // FUNCTION
-function verbKanjiPlainPotentialPositive(input) {
+function KanjiPotential(input) {
 
       // Check is it type II ichidan
   if(hiraganaListH[3].indexOf(input.slice(-2, -1)) >= 0 || hiraganaListH[1].indexOf(input.slice(-2, -1)) >= 0 || ichidanException.indexOf(input) >= 0) {
@@ -1465,7 +1465,7 @@ function verbKanjiPoliteCasuativeNegative(input) {
 
 // //////////////////////////////////////////////////////////////////////////////////////////
 // FUNCTION
-function verbKanjiPlainCasuativePositive(input) {
+function KanjiCasuative(input) {
 
     // Check is it type II ichidan
   if(hiraganaListH[3].indexOf(input.slice(-2, -1)) >= 0 || hiraganaListH[1].indexOf(input.slice(-2, -1)) >= 0 || ichidanException.indexOf(input) >= 0) {
@@ -1586,7 +1586,7 @@ function verbKanjiPolitePassiveNegative(input) {
 
 // //////////////////////////////////////////////////////////////////////////////////////////
 // FUNCTION
-function verbKanjiPlainPassivePositive(input) {
+function KanjiPassive(input) {
 
         // Check is it type II ichidan
   if(hiraganaListH[3].indexOf(input.slice(-2, -1)) >= 0 || hiraganaListH[1].indexOf(input.slice(-2, -1)) >= 0 || ichidanException.indexOf(input) >= 0) {
